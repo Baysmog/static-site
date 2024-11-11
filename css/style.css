@@ -1456,3 +1456,88 @@ ul.breadcrumb li+li:before {
         padding: 0 15px;
     }
 }
+
+.call-now-btn {
+    display: inline-block;
+    padding: 15px 30px;
+    font-size: 18px;
+    color: #fff;
+    background-color: #28a745;
+    border: none;
+    border-radius: 8px;
+    text-decoration: none;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+/* Hover and Focus State with Animation */
+.call-now-btn:hover,
+.call-now-btn:focus {
+    background-color: #218838;
+    transform: scale(1.05);
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.5em;
+    color: black;
+    transition: color 0.3s ease;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+/* Gradient color styling for "BAYSMOG" text */
+.logo .text {
+    margin-right: 10px;
+    background: linear-gradient(90deg, #0073e6, #00c6ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+/* Icon container with a 3D effect */
+.logo .icon {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 2px;
+    height: 40px;
+    /* background-color: blue; */
+    color: white;
+    font-size: 0.5em;
+    font-weight: bold;
+    border-radius: 4px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+/* Plus symbol with hover animation */
+.logo .icon .plus {
+    position: absolute;
+    top: -12px;
+    right: -10px;
+    color: red;
+    font-size: 1.8em;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+/* Hover effects */
+.logo:hover .text {
+    transform: scale(1.05);
+    /* background: linear-gradient(90deg, #00c6ff, #0073e6); */
+}
+
+.logo:hover .icon {
+    /* background-color: #003366; */
+    transform: scale(1.15);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+}
+
+.logo:hover .plus {
+    /* transform: rotate(30deg); */
+    color: darkred;
+}
