@@ -1503,10 +1503,10 @@ ul.breadcrumb li+li:before {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 2px;
-    height: 40px;
+
+    /* height: 40px; */
     /* background-color: blue; */
-    color: white;
+    color: rgb(255, 255, 255, 1);
     font-size: 0.5em;
     font-weight: bold;
     border-radius: 4px;
@@ -1518,8 +1518,8 @@ ul.breadcrumb li+li:before {
 /* Plus symbol with hover animation */
 .logo .icon .plus {
     position: absolute;
-    top: -12px;
-    right: -10px;
+    top: -38px;
+    right: -15px;
     color: red;
     font-size: 1.8em;
     transition: transform 0.3s ease, color 0.3s ease;
