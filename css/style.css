@@ -15,14 +15,14 @@ html {
 
 :root {
     --red-color: #D5242D;
-    --blue-color: #204394;
+    --green-color: #38ce5e;
     --light-grey-color: #F8F8F8;
     --dark-grey-color: #D9D9D9;
     --white-color: #ffffff;
 }
 
 .bg-primary {
-    background-color: var(--blue-color) !important;
+    background-color: var(--green-color) !important;
 }
 
 .bg-secondary {
@@ -96,7 +96,7 @@ figure {
     height: 30px;
     border-radius: 50%;
     position: absolute;
-    background-color: var(--blue-color);
+    background-color: var(--green-color);
     top: 0;
     left: 0;
 
@@ -248,13 +248,13 @@ blockquote {
     border-left: 12px solid #F27F52;
     padding: 12px 30px;
     margin: 20px 0;
-    color: #133D65;
+    color: var(--green-color);
     letter-spacing: -1px;
 }
 
 .blog-content blockquote {
     font-size: 25px;
-    color: #015093;
+    color: var(--green-color);
 }
 
 
@@ -350,7 +350,7 @@ span.phone-icon i {
 /***navigation****/
 
 .navigation-section {
-    background: #015093;
+    background: #38ce5e;
     padding: 0 20px;
 }
 
@@ -482,7 +482,7 @@ aside p {
     font-weight: 700;
     border-radius: 10px;
     background: #FFF;
-    height: 52px;
+    height: 104px;
     width: 245px;
     margin: 0 auto;
     line-height: 52px;
@@ -628,7 +628,7 @@ span.arrow-icon img {
     border-radius: 5px;
     box-shadow: 4px 4px 10px 0px rgba(0, 0, 0, 0.10);
     margin-right: 21px;
-    color: var(--blue-color);
+    color: var(--green-color);
     font-size: 24px;
     width: 50px;
     height: 50px;
@@ -716,7 +716,7 @@ span.link-icon i {
 }
 
 .acc-head:hover p {
-    color: var(--blue-color);
+    color: var(--green-color);
 }
 
 .acc-head::before,
@@ -724,7 +724,7 @@ span.link-icon i {
     content: '';
     position: absolute;
     top: 37px;
-    background-color: var(--blue-color);
+    background-color: var(--green-color);
     transition: all .3s;
 }
 
@@ -776,7 +776,7 @@ span.link-icon i {
     position: absolute;
     width: 400px;
     height: 400px;
-    background-color: var(--blue-color);
+    background-color: var(--green-color);
     content: '';
     right: -237px;
     top: 0;
@@ -787,7 +787,7 @@ span.link-icon i {
     position: absolute;
     width: 400px;
     height: 400px;
-    background-color: var(--blue-color);
+    background-color: var(--green-color);
     content: '';
     right: -220px;
     top: 0;
@@ -888,8 +888,16 @@ ul.breadcrumb li+li:before {
     content: "/\00a0";
 }
 
+
+.map-small {
+    display: none;
+}
+
+
 /*** media query css ***/
 @media only screen and (max-width: 1200px) {
+
+
     .site-section ul li {
         margin-bottom: 17px;
         width: 100%;
@@ -918,6 +926,15 @@ ul.breadcrumb li+li:before {
 }
 
 @media only screen and (max-width: 992px) {
+    .map-big {
+        display: none;
+    }
+
+    .map-small {
+        display: block;
+    }
+
+
     h1 {
         font-size: 38px;
     }
@@ -1016,6 +1033,17 @@ ul.breadcrumb li+li:before {
 }
 
 @media only screen and (max-width: 768px) {
+    .map-big {
+        display: none;
+    }
+
+
+    .map-small {
+        display: block;
+    }
+
+
+
     .send-message .site-content {
         display: block !important;
     }
@@ -1086,6 +1114,17 @@ ul.breadcrumb li+li:before {
 }
 
 @media only screen and (max-width: 640px) {
+    .map-big {
+        display: none;
+    }
+
+
+    .map-small {
+        display: block;
+    }
+
+
+
     h1 {
         font-size: 32px;
         line-height: 48px;
@@ -1165,7 +1204,7 @@ ul.breadcrumb li+li:before {
     }
 
     .hdr-contact .contact-location {
-        background: #1671B5;
+        background: var(--green-color);
         padding: 7px;
         border-radius: 4px;
         color: #fff;
@@ -1280,6 +1319,17 @@ ul.breadcrumb li+li:before {
         margin-bottom: 28px;
     }
 
+    .map-big {
+        display: none;
+    }
+
+
+    .map-small {
+        display: block;
+    }
+
+
+
     .contact-links a {
         max-width: 100%;
         width: 100%;
@@ -1321,6 +1371,17 @@ ul.breadcrumb li+li:before {
     .hero-video iframe {
         height: 210px;
     }
+
+    .map-big {
+        display: none;
+    }
+
+
+    .map-small {
+        display: block;
+    }
+
+
 
     .hdr-location p {
         font-size: 13px;
@@ -1474,7 +1535,7 @@ ul.breadcrumb li+li:before {
 /* Hover and Focus State with Animation */
 .call-now-btn:hover,
 .call-now-btn:focus {
-    background-color: #218838;
+    background-color: var(--green-color);
     transform: scale(1.05);
 }
 
@@ -1491,7 +1552,7 @@ ul.breadcrumb li+li:before {
 /* Gradient color styling for "BAYSMOG" text */
 .logo .text {
     margin-right: 10px;
-    background: linear-gradient(90deg, #0073e6, #00c6ff);
+    background: linear-gradient(90deg, #08e600, #00ffa2);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     transition: background 0.3s ease, transform 0.3s ease;
@@ -1540,4 +1601,23 @@ ul.breadcrumb li+li:before {
 .logo:hover .plus {
     /* transform: rotate(30deg); */
     color: darkred;
+}
+
+.black {
+    color: #111;
+}
+
+
+
+.cross-out-price {
+    position: relative;
+    color: gray;
+    text-decoration: line-through;
+    /* Cross out old price */
+
+}
+
+
+.gray {
+    color: gray;
 }
