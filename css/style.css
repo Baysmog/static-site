@@ -840,6 +840,18 @@ section.inner-banner figure {
     overflow: hidden;
 }
 
+.sticky-header {
+    position: -webkit-sticky;
+    /* Safari */
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    font-size: 1.5em;
+    font-weight: bold;
+    background-color: #00c2ffb0;
+    color: white;
+}
+
 section.inner-banner figure::before {
     position: absolute;
     left: 0;
